@@ -1,4 +1,4 @@
-from sysdata.sim.csv_futures_sim_data import csvFuturesSimData
-data = csvFuturesSimData()
-raw_cost = data.get_raw_cost_data("US10")
-print(raw_cost)
+from sysdata.csv.csv_equity_adjusted_prices import csvEquityAdjustedPricesData
+
+data = csvEquityAdjustedPricesData()
+print(data.get_list_of_instruments())
