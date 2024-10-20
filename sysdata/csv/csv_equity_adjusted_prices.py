@@ -46,7 +46,7 @@ class csvEquityAdjustedPricesData(equityAdjustedPricesData):
             return equityAdjustedPrices.create_empty()
         
         instrpricedata.columns = ["price"]
-        instrpricedata = instrpricedata.groupy(level=0).last()
+        instrpricedata = instrpricedata.groupby(level=0).last()
         instrpricedata = pd.Series(instrpricedata.iloc[:, 0])
 
         instrpricedata = equityAdjustedPrices(instrpricedata)
