@@ -1,0 +1,7 @@
+sysdata > equity
+sysdata > equity > adjusted_prices.py
+sysobjects > equity_adjusted_prices.py
+sysdata > csv > csv_adjusted_prices.py
+data > equity
+data > equity > csvconfig
+data > equity > adjusted_prices_csv

@@ -1,0 +1,13 @@
+Prefixes:
+    AXX = Abstract Definition
+
+Major (Ideas to be implement some time later (maybe))
+    Instrument data to be stored in data > equity > csvconfig
+    Add extra functionality to sysobjects > equity_adjusted_prices.py > equityAdjustedPrices
+
+
+adjusted_prices.py (equity)
+    AXX1. Implement is_code_in_data()
+    AXX2. Implement _get_adjusted_prices_without_checking()
+    AXX3. Implement _delete_adjusted_prices_without_any_warning_be_careful()
+    AXX4. Implement _add_adjusted_prices_without_checking_for_existing_entry()

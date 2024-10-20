@@ -1,0 +1,14 @@
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Requirement already satisfied: numpy>=1.19.5 in ./venv/3.10.14/lib/python3.10/site-packages (from scikit-learn) (1.26.4)
+Requirement already satisfied: scipy>=1.6.0 in ./venv/3.10.14/lib/python3.10/site-packages (from scikit-learn) (1.14.1)
+Collecting joblib>=1.2.0 (from scikit-learn)
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Downloading scikit_learn-1.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.4/13.4 MB 1.5 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Installing collected packages: threadpoolctl, joblib, scikit-learn
+Successfully installed joblib-1.4.2 scikit-learn-1.5.1 threadpoolctl-3.5.0
