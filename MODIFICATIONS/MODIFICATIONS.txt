@@ -5,3 +5,4 @@ sysdata > csv > csv_adjusted_prices.py
 data > equity
 data > equity > csvconfig
 data > equity > adjusted_prices_csv
+sysdata > sim > equity_sim_data.py

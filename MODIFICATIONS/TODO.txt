@@ -11,3 +11,28 @@ adjusted_prices.py (equity)
     AXX2. Implement _get_adjusted_prices_without_checking()
     AXX3. Implement _delete_adjusted_prices_without_any_warning_be_careful()
     AXX4. Implement _add_adjusted_prices_without_checking_for_existing_entry()
+
+
+equity_sim_data.py 
+    make instrument cost function / module
+
+"
+make necessary modifications to sysobjects.instruments classes to make them compatible with equity
+if required, make a replacement for equity. also generate the config data for the same, use 
+instrumentconfig.csv as a reference
+finally replace the imports in sim_data modules
+
+functions to be affected:
+equity_sim_data.py 
+    all_asset_classes()
+    all_instruments_in_asset_class()
+    asset_class_for_instrument()
+    get_raw_cost_data()
+    get_value_of_block_price_move()
+    get_instrument_currency()
+    get_instrument_asset_classes()
+    get_spread_cost()
+    get_instrument_meta_data()
+    get_instrument_object_with_meta_data()
+
+" 
