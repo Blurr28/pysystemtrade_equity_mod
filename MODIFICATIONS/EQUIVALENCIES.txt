@@ -2,3 +2,6 @@ sysobjects > equity_adjusted_prices.py == sysobjects > adjusted_prices.py
 sysdata > equity > adjusted_prices.py == sysdata > futures > adjusted_prices.py
 sysdata > csv > csv_equity_adjusted_prices.py == sysdata > csv > csv_adjusted_prices.py
 sysdata > sim > equity_sim_data.py == sysdata > sim > futures_sim_data.py
+sysobjects > equity_instruments.py == sysobjects > instruments.py
+sysdata > equity > instruments.py == sysdata > futures > instruments.py
+sysdata > csv > csv_equity_instrument_data.py == sysdata > csv > csv_instrument_data.py

@@ -1,4 +1,4 @@
-from sysdata.csv.csv_equity_adjusted_prices import csvEquityAdjustedPricesData
+from sysdata.sim.csv_futures_sim_data import csvFuturesSimData
 
-data = csvEquityAdjustedPricesData()
-print(data.get_list_of_instruments())
+data = csvFuturesSimData()
+print(data.all_asset_classes())

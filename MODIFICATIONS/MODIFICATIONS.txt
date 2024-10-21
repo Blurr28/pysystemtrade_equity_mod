@@ -6,3 +6,6 @@ data > equity
 data > equity > csvconfig
 data > equity > adjusted_prices_csv
 sysdata > sim > equity_sim_data.py
+sysobjects > equity_instruments.py
+sysdata > equity > instruments.py
+sysdata > csv > csv_equity_instrument_data.py
