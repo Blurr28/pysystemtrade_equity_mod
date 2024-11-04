@@ -9,3 +9,5 @@ sysdata > sim > equity_sim_data.py
 sysobjects > equity_instruments.py
 sysdata > equity > instruments.py
 sysdata > csv > csv_equity_instrument_data.py
+sysdata > sim > equity_sim_data_with_data_blob.py
+sysdata > sim > csv_equity_sim_data.py

@@ -5,3 +5,5 @@ sysdata > sim > equity_sim_data.py == sysdata > sim > futures_sim_data.py
 sysobjects > equity_instruments.py == sysobjects > instruments.py
 sysdata > equity > instruments.py == sysdata > futures > instruments.py
 sysdata > csv > csv_equity_instrument_data.py == sysdata > csv > csv_instrument_data.py
+sysdata > sim > equity_sim_data_with_data_blob.py == sysdata > sim > futures_sim_data_with_data_blob
+sysdata > sim > csv_equity_sim_data == sysdata > sim > csv_futures_sim_data.py
