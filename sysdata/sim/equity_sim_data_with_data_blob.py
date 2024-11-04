@@ -21,7 +21,7 @@ class genericBlobUsingEquitySimData(equitySimData):
         self._data = data
     
     def get_instrument_list(self):
-        return self.db_futures_adjusted_prices_data.get_list_of_instruments()
+        return self.db_equity_adjusted_prices_data.get_list_of_instruments()
     
     def _get_fx_data_from_start_date(
         self, currency1:str, currency2: str, start_date

@@ -62,7 +62,7 @@ class simData(baseData):
         """
         return self.get_instrument_list()
 
-    def system_init(self, base_system: "System"):
+    def system_init(self, base_system = "System"):
         """
         This is run when added to a base system
 
