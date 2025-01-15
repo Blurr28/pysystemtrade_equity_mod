@@ -7,3 +7,5 @@ sysdata > equity > instruments.py == sysdata > futures > instruments.py
 sysdata > csv > csv_equity_instrument_data.py == sysdata > csv > csv_instrument_data.py
 sysdata > sim > equity_sim_data_with_data_blob.py == sysdata > sim > futures_sim_data_with_data_blob
 sysdata > sim > csv_equity_sim_data == sysdata > sim > csv_futures_sim_data.py
+systems > provided > futures_chapter15 > equitybasesystem == systems > provided > futures_chapter15 > basesystem.py
+systems > provided > example > exampleequityconfig.yaml == systems > provided > example > exampleconfig.yaml
