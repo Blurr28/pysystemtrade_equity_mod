@@ -41,7 +41,6 @@ class genericBlobUsingEquitySimData(equitySimData):
         return asset_class_data
     
     def get_all_instrument_data_as_df(self):
-        """Not yet functioning"""
         all_instrument_data = (
             self.db_equity_instrument_data.get_all_instrument_data_as_df()
         )
@@ -62,13 +61,11 @@ class genericBlobUsingEquitySimData(equitySimData):
     def get_instrument_meta_data(
         self, instrument_code: str
     ) -> futuresInstrumentWithMetaData:
-        """Not implemented/ functioning"""
-        return self.get_instrument_object_wit_meta_data(instrument_code)
+        return self.get_instrument_object_with_meta_data(instrument_code)
     
     def get_instrument_object_with_meta_data(
         self, instrument_code: str
     ) -> futuresInstrumentWithMetaData:
-        """Not functioning"""
         instrument = self.db_equity_instrument_data.get_instrument_data(
             instrument_code
         )
@@ -76,7 +73,6 @@ class genericBlobUsingEquitySimData(equitySimData):
         return instrument
     
     def get_spread_cost(self, instrument_code: str) -> float:
-        """Not working/ needs to be implemented"""
         return self.db_spread_cost_data.get_spread_cost(instrument_code)
     
     @property
@@ -85,7 +81,6 @@ class genericBlobUsingEquitySimData(equitySimData):
     
     @property
     def db_fx_prices_data(self) -> fxPricesData:
-        """Not functioning"""
         return self.data.db_fx_prices
         
     @property
@@ -98,5 +93,4 @@ class genericBlobUsingEquitySimData(equitySimData):
     
     @property
     def db_spread_cost_data(self):
-        """Not implemented"""
         return self.data.db_spread_cost

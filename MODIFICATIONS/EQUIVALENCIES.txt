@@ -9,3 +9,4 @@ sysdata > sim > equity_sim_data_with_data_blob.py == sysdata > sim > futures_sim
 sysdata > sim > csv_equity_sim_data == sysdata > sim > csv_futures_sim_data.py
 systems > provided > futures_chapter15 > equitybasesystem == systems > provided > futures_chapter15 > basesystem.py
 systems > provided > example > exampleequityconfig.yaml == systems > provided > example > exampleconfig.yaml
+sysdata > csv > csv_equity_spread_costs.py == sysdata > csv > csv_spread_costs.py

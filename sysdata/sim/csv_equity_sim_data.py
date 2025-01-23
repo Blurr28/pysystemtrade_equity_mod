@@ -2,7 +2,7 @@ from syscore.constants import arg_not_supplied
 from sysdata.csv.csv_equity_adjusted_prices import csvEquityAdjustedPricesData
 from sysdata.csv.csv_spot_fx import csvFxPricesData
 from sysdata.csv.csv_equity_instrument_data import csvEquityInstrumentData
-#from sysdata.csv.csv_spread_cost import csvSpreadCostData
+from sysdata.csv.csv_equity_spread_costs import csvSpreadCostData
 
 from sysdata.data_blob import dataBlob
 from sysdata.sim.equity_sim_data_with_data_blob import genericBlobUsingEquitySimData
@@ -21,7 +21,7 @@ class csvEquitySimData(genericBlobUsingEquitySimData):
                 csvEquityAdjustedPricesData,
                 csvEquityInstrumentData,
                 csvFxPricesData,
-                #csvSpreadCostData
+                csvSpreadCostData
             ],
          )
         

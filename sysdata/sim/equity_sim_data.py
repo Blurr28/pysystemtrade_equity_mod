@@ -16,12 +16,10 @@ class equitySimData(simData):
             self.get_instrument_list)
     
     def all_asset_classes(self) -> list:
-        "Doesnt work yet"
         asset_class_data = self.get_instrument_asset_classes()
         return asset_class_data.all_asset_classes()
     
     def all_instruments_in_asset_class(self, asset_class: str) -> list:
-        "Doesnt work yet"
         asset_class_data = self.get_instrument_asset_classes()
         list_of_instrument_codes = self.get_instrument_list()
         asset_class_instrument_list = asset_class_data.all_instruments_in_asset_class(
@@ -31,7 +29,6 @@ class equitySimData(simData):
         return asset_class_instrument_list
     
     def asset_class_for_instrument(self, instrument_code: str) -> str:
-        "Doesnt work yet"
         asset_class_data = self.get_instrument_asset_classes()
         asset_class = asset_class_data[instrument_code]
 
@@ -50,7 +47,6 @@ class equitySimData(simData):
         return price[start_date:]
     
     def get_raw_cost_data(self, instrument_code: str) -> instrumentCosts:
-        "Doesnt work yet"
         try:
             cost_data_object = self.get_instrument_object_with_meta_data(
                 instrument_code
@@ -71,7 +67,6 @@ class equitySimData(simData):
         return instrument_costs
     
     def get_value_of_block_price_move(self, instrument_code: str) -> float:
-        "Doesnt work yet"
         instr_object = self.get_instrument_object_with_meta_data(instrument_code)
         meta_data = instr_object.meta_data
         block_move_value = meta_data.Pointsize
@@ -80,7 +75,6 @@ class equitySimData(simData):
     
     
     def get_instrument_currency(self, instrument_code: str) -> str:
-        "Doesnt work yet"
         instr_object = self.get_instrument_object_with_meta_data(instrument_code)
         meta_data = instr_object.meta_data
         currency = meta_data.Currency
@@ -88,11 +82,9 @@ class equitySimData(simData):
         return currency
     
     def get_instrument_asset_classes(self):
-        "Doesnt work yet"
         raise NotImplementedError() 
     
     def get_spread_cost(self, instrument_code: str) -> float:
-        "Doesnt work yet"
         raise NotImplementedError()
     
     def get_adjusted_equity_price(self, instrument_code: str) -> equityAdjustedPrices:
@@ -101,13 +93,11 @@ class equitySimData(simData):
     def get_instrument_meta_data(
             self, instrument_code
     ) -> futuresInstrumentWithMetaData:
-        "Doesnt work yet"
 
         raise NotImplementedError()
     
     def get_instrument_object_with_meta_data(
             self, instrument_code: str
     ) -> futuresInstrumentWithMetaData:
-        "Doesnt work yet"
 
         raise NotImplementedError()
