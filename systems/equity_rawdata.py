@@ -8,7 +8,7 @@ TBD = "To be developed."
 class EquityRawData(RawData):
 
     def rolls_per_year(self, instrument_code):
-        raise NotImplementedError(NA)
+        return 0
     
     def get_instrument_raw_carry_data(self, instrument_code):
         raise NotImplementedError(NA)
