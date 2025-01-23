@@ -7,13 +7,6 @@ TBD = "To be developed."
 
 class EquityRawData(RawData):
 
-    def get_raw_cost_data(self, instrument_code):
-        raise NotImplementedError(NA)
-    
-    def get_value_of_block_price_move(self, instrument_code):
-        block_price = self.get_daily_prices(instrument_code).iloc[-1]
-        return block_price
-
     def rolls_per_year(self, instrument_code):
         raise NotImplementedError(NA)
     
@@ -43,9 +36,6 @@ class EquityRawData(RawData):
     
     def median_carry_for_asset_class(self, instrument_code):
         raise NotImplementedError(NA)
-    
-    def all_instruments_in_asset_class(self, asset_class):
-        raise NotImplementedError(TBD)
 
     @diagnostic
     def _by_asset_class_daily_vol_normalised_price_for_asset_class(self, asset_class):
