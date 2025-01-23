@@ -7,13 +7,13 @@ from systems.forecasting import Rules
 from systems.basesystem import System
 from systems.forecast_combine import ForecastCombine
 from systems.forecast_scale_cap import ForecastScaleCap
-from systems.rawdata import RawData
+from systems.equity_rawdata import EquityRawData
 from systems.positionsizing import PositionSizing
 from systems.portfolio import Portfolios
 from systems.accounts.accounts_stage import Account
 
 
-def futures_system(
+def equity_system(
     data=arg_not_supplied,
     config=arg_not_supplied,
     trading_rules=arg_not_supplied,
@@ -64,7 +64,7 @@ def futures_system(
             Account(),
             Portfolios(),
             PositionSizing(),
-            RawData(),
+            EquityRawData(),
             ForecastCombine(),
             ForecastScaleCap(),
             rules,

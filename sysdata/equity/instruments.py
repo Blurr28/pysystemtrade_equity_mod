@@ -112,6 +112,11 @@ class equityInstrumentData(baseData):
 
         self.log.info("Added instrument object %s" % instrument_object.instrument_code)
 
+    def is_code_in_data(self, instrument_code: str) -> bool:
+        if instrument_code in self.get_list_of_instruments():
+            return True
+        else:
+            return False
 
     def get_list_of_instruments(self):
         raise NotImplementedError(USE_CHILD_CLASS_ERROR)
